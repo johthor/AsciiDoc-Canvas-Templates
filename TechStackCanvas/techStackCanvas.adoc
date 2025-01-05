@@ -1,0 +1,226 @@
+= The Tech Stack Canvas
+Johannes Thorn <Johannes.Thorn@eCube.de>
+0.1, February 08, 2024: Ideation
+:icons: font
+// :noheader:
+// :nofooter:
+
+Create, document, and communicate your product's tech stack.
+For more details see
+https://techstackcanvas.io/[The Tech Stack Canvas].
+
+[.landscape]
+<<<
+
+[.tech-stack.canvas]
+== Tech Stack Canvas
+
+[.context.business-goals]
+.Business Goals
+--
+_the main objectives this project tries to achieve_
+--
+
+[.context.sizing-numbers]
+.Sizing Numbers
+--
+_that influenced decisions, such as number of users, requests per second, data volumes_
+--
+
+[.context.quality-attributes]
+.Major Quality Attributes
+--
+_that influenced decisions, such as availability, fault tolerance, learnability, adaptability_
+--
+
+[.layers.frontend-technologies]
+.Frontend Technologies
+--
+_languages, tools and frameworks used for developing the user interface and user experience_
+--
+
+[.layers.backend-technologies]
+.Backend Technologies
+--
+_technologies used for serverside processing, data management, and business logic implementation_
+--
+
+[.layers.data-storage]
+.Data Storage & Management
+--
+_technologies used for data storage, retrieval, and processing_
+--
+
+[.support.api-integrations]
+.API & Integrations
+--
+_third-party services used to extend the functionality of the product or service_
+--
+
+[.support.security-compliance]
+.Security & Compliance
+--
+_tools, practices, and standards implemented to ensure security and privacy_
+--
+
+[.support.testing-qa]
+.Testing & QA
+--
+_tools and methodologies used to test the application's functionality, performance, and security_
+--
+
+[.foundation.infrastructure-deployment]
+.Infrastructure & Deployment
+--
+_platforms, tools, and services used for hosting, deploying, and managing the application_
+--
+
+[.foundation.monitoring-analytics]
+.Monitoring & Analytics
+--
+_tools and services used to monitor the application's performance,
+track user behavior, and gather insights for optimization_
+--
+
+[.foundation.workflow-collaboration]
+.Development Workflow & Collaboration
+--
+_tools and processes used to facilitate efficient development and collaboration
+among team members_
+--
+
+[.portrait]
+<<<
+
+== Explanations
+
+Something important
+
+// technical stuff below
+
+ifdef::backend-html5[]
+++++
+<style>
+.canvas div.sectionbody {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    height: 100%;
+}
+@media screen {
+    .canvas div.sectionbody {
+        width: 98vw;
+        position: relative;
+        left: calc(-49vw + 50%);
+    }
+}
+.canvas div.sectionbody .openblock {
+    padding: 20px;
+    border-radius: 10px;
+    color: #242424;
+}
+.canvas div.sectionbody .openblock > .title {
+    color: #242424;
+    font-size: 1.5em;
+}
+
+.canvas div.sectionbody .openblock.context {
+    background-color: #ff9c66;
+}
+.canvas div.sectionbody .openblock.layers {
+    background-color: #d8d8d8;
+}
+.canvas div.sectionbody .openblock.support {
+    background-color: #80a0a9;
+}
+.canvas div.sectionbody .openblock.foundation {
+    background-color: #646465;
+    color: #f4f4f4;
+}
+
+.canvas div.sectionbody .openblock.foundation > .title {
+    color: #f4f4f4;
+}
+
+.tech-stack .business-goals {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+}
+
+.tech-stack .sizing-numbers {
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 2;
+}
+
+.tech-stack .quality-attributes {
+    grid-column: 1 / span 3;
+    grid-row: 5 / span 2;
+}
+
+.tech-stack .frontend-technologies {
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 2;
+}
+
+.tech-stack .backend-technologies {
+    grid-column: 4 / span 3;
+    grid-row: 3 / span 2;
+}
+
+.tech-stack .data-storage {
+    grid-column: 4 / span 3;
+    grid-row: 5 / span 2;
+}
+
+.tech-stack .api-integrations {
+    grid-column: 7 / span 3;
+    grid-row: 1 / span 6;
+}
+
+.tech-stack .security-compliance {
+    grid-column: 10 / span 3;
+    grid-row: 1 / span 3;
+}
+
+.tech-stack .testing-qa {
+    grid-column: 10 / span 3;
+    grid-row: 4 / span 3;
+}
+
+.tech-stack .infrastructure-deployment {
+    grid-column: 1 / span 4;
+    grid-row: 7 / span 2;
+}
+
+.tech-stack .monitoring-analytics {
+    grid-column: 5 / span 4;
+    grid-row: 7 / span 2;
+}
+
+.tech-stack .workflow-collaboration {
+    grid-column: 9 / span 4;
+    grid-row: 7 / span 2;
+}
+
+@media print {
+    @page {
+        size: portrait;
+    }
+    @page rotated {
+        page-orientation: rotate-left;
+    }
+    div {
+        overflow: hidden;
+    }
+    .sect1.canvas {
+        page: rotated;
+        transform-origin: top left;
+        transform: translateX(100vw) rotate(90deg);
+        width: 100vh;
+        height: 100vw;
+        padding: 0 .9375em !important;
+    }
+}
+</style>
+++++
+endif::[]

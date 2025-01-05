@@ -1,3 +1,9 @@
+ideas
+*.pdf
+*.docx
+*.html
+
+# Ruby related ignores
 *.gem
 *.rbc
 /.config

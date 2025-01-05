@@ -1,0 +1,184 @@
+= The Architecture Inception Canvas
+Johannes Thorn <Johannes.Thorn@eCube.de>
+0.1, November 16, 2023: Ideation
+:icons: font
+// :noheader:
+// :nofooter:
+
+An Efficient and Collaborative Way to Define your Software Architecture Playground.
+For more details see
+https://canvas.arc42.org/architecture-inception-canvas[arc42 Architecture Inception Canvas].
+
+[.landscape]
+<<<
+
+[.architecture-inception.canvas]
+== Architecture Inception Canvas
+
+[.requirement.business-case]
+.Business Case
+--
+*Here is your WHY*
+_Brief description of the business case
+or economic driver behind the software system._
+--
+
+[.requirement.functional-overview]
+.Functional Overview
+--
+*This is your product box*
+_The most important functional requirements at a high level._
+--
+
+[.requirement.quality-goals]
+.Quality Goals
+--
+*The key drivers of architecture*
+_The three most important quality goals for the architecture,
+which have the highest priority for the most important stakeholder._
+--
+
+[.requirement.business-context]
+.Business Context
+--
+*Explore the context and get the scope*
+_Separate your system under construction as a black box from all its communication partners.
+Communication partners are neighbouring external systems and users._
+--
+
+[.requirement.organisational-constraints]
+.Organisational Constraints
+--
+*Your limitation of freedom*
+_Any organisational requirement that limits the software architects freedom of decision._
+--
+
+[.requirement.technical-constraints]
+.Technical Constraints
+--
+*Your limitation of freedom*
+_Any technical requirement that limits the software architects freedom of decision._
+--
+
+[.solution.architecture-hypotheses]
+.Architecture Hypotheses
+--
+*Create your first high-level architectural hypotheses based on your current knowledge*
+_Resulting architectural hypotheses and important, expensive, large-scale
+or risky decisions, including justifications._
+--
+
+[.problem.technical-challenges]
+.Technical Challenges & Risks
+--
+*What are the upcoming challenges and the resulting risks?*
+_Identified current known challenges and technical risks._
+--
+
+[.portrait]
+<<<
+
+== Explanations
+
+Something important
+
+// technical stuff below
+
+ifdef::backend-html5[]
+++++
+<style>
+.canvas div.sectionbody {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    height: 100%;
+}
+@media screen {
+    .canvas div.sectionbody {
+        width: 98vw;
+        position: relative;
+        left: calc(-49vw + 50%);
+    }
+}
+.canvas div.sectionbody .openblock {
+    padding: 20px;
+    border-radius: 10px;
+    color: #132c15;
+}
+.canvas div.sectionbody .openblock > .title {
+    color: #111111;
+    font-size: 1.5em;
+}
+
+.requirement {
+    background-color: rgb(143, 228, 180);
+}
+.solution {
+    background-color: rgb(148, 215, 239);
+}
+.problem {
+    background-color: rgb(255, 199, 198);
+}
+
+.architecture-inception .business-case {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+}
+
+.architecture-inception .functional-overview {
+    grid-column: 1;
+    grid-row: 3 / span 3;
+}
+
+.architecture-inception .quality-goals {
+    grid-column: 1;
+    grid-row: 6 / span 3;
+}
+
+.architecture-inception .business-context {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 6;
+}
+
+.architecture-inception .organisational-constraints {
+    grid-column: 4;
+    grid-row: 3 / span 3;
+}
+
+.architecture-inception .technical-constraints {
+    grid-column: 4;
+    grid-row: 6 / span 3;
+}
+
+.architecture-inception .architecture-hypotheses {
+    grid-column: 1 / span 2;
+    grid-row: 9 / span 2;
+}
+
+.architecture-inception .technical-challenges {
+    grid-column: 3 / span 2;
+    grid-row: 9 / span 2;
+}
+
+@media print {
+    @page {
+        size: portrait;
+    }
+    @page rotated {
+        page-orientation: rotate-left;
+    }
+    div {
+        overflow: hidden;
+    }
+    .sect1.canvas {
+        page: rotated;
+        transform-origin: top left;
+        transform: translateX(100vw) rotate(90deg);
+        width: 100vh;
+        height: 100vw;
+        padding: 0 .9375em !important;
+    }
+}
+</style>
+++++
+endif::[]

@@ -1,0 +1,303 @@
+= Software Architecture Canvases
+Johannes Thorn <Johannes.Thorn@eCube.de>
+0.1, November 16, 2023: Ideation
+:icons: font
+// :noheader:
+// :nofooter:
+
+As lean as architecture documentation can ever get
+For more details see
+https://canvas.arc42.org[Software Architecture Canvas].
+
+[.landscape]
+<<<
+
+[.architecture-inception.canvas]
+== Architecture Inception Canvas
+
+[.requirement.business-case]
+.Business Case
+--
+*Here is your WHY*
+_Brief description of the business case
+or economic driver behind the software system._
+--
+
+[.requirement.functional-overview]
+.Functional Overview
+--
+*This is your product box*
+_The most important functional requirements at a high level._
+--
+
+[.requirement.quality-goals]
+.Quality Goals
+--
+*The key drivers of architecture*
+_The three most important quality goals for the architecture,
+which have the highest priority for the most important stakeholder._
+--
+
+[.requirement.business-context]
+.Business Context
+--
+*Explore the context and get the scope*
+_Separate your system under construction as a black box from all its communication partners.
+Communication partners are neighbouring external systems and users._
+--
+
+[.requirement.organisational-constraints]
+.Organisational Constraints
+--
+*Your limitation of freedom*
+_Any organisational requirement that limits the software architects freedom of decision._
+--
+
+[.requirement.technical-constraints]
+.Technical Constraints
+--
+*Your limitation of freedom*
+_Any technical requirement that limits the software architects freedom of decision._
+--
+
+[.solution.architecture-hypotheses]
+.Architecture Hypotheses
+--
+*Create your first high-level architectural hypotheses based on your current knowledge*
+_Resulting architectural hypotheses and important, expensive, large-scale
+or risky decisions, including justifications._
+--
+
+[.problem.technical-challenges]
+.Technical Challenges & Risks
+--
+*What are the upcoming challenges and the resulting risks?*
+_Identified current known challenges and technical risks._
+--
+
+[.portrait]
+<<<
+
+== Explanations
+
+Something important
+
+[.landscape]
+<<<
+
+[.architecture-communication.canvas]
+== Architecture Communication Canvas
+
+[.requirement.value-proposition]
+.Value Proposition
+--
+_What is the core business case or economic driver?_
+--
+
+[.requirement.key-stakeholder]
+.Key Stakeholder
+--
+* _For whom are we creating value?_
+* _Who are the customers?_
+* _Who is paying?_
+* _Who is contributing?_
+--
+
+[.requirement.core-functions]
+.Core Functions
+--
+_Most important functions? +
+Supported processes or activities_
+--
+
+[.requirement.quality-requirements]
+.Quality Requirements
+--
+_Speed, scalability, reliability, usability, security, safety, capacity, flexibility or similar._
+--
+
+[.requirement.business-context]
+.Business Context
+--
+_Important external interfaces or neighbouring systems,
+including important actors or user roles_
+--
+
+[.solution.core-decisions]
+.Core Decisions - Good or Bad
+--
+_Which decisions lead to the current state?_
+--
+
+[.solution.components]
+.Components/Modules
+--
+_Major building blocks of the system, important subsystems, modules, services._
+--
+
+[.solution.technologies]
+.Technologies
+--
+_Important technologies used for development and operation._
+--
+
+[.problem.risks]
+.Risks and Missing Information
+--
+* _Potential problems and risks?_
+* _What information is missing or has gotten lost?_
+* _What is hindering the team from delivering better value faster?_
+--
+
+[.portrait]
+<<<
+
+== Explanations
+
+Something important
+
+// technical stuff below
+
+ifdef::backend-html5[]
+++++
+<style>
+.canvas div.sectionbody {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    height: 100%;
+}
+@media screen {
+    .canvas div.sectionbody {
+        width: 98vw;
+        position: relative;
+        left: calc(-49vw + 50%);
+    }
+}
+.canvas div.sectionbody .openblock {
+    padding: 20px;
+    border-radius: 10px;
+    color: #132c15;
+}
+.canvas div.sectionbody .openblock > .title {
+    color: #111111;
+    font-size: 1.5em;
+}
+
+.requirement {
+    background-color: rgb(143, 228, 180);
+}
+.solution {
+    background-color: rgb(148, 215, 239);
+}
+.problem {
+    background-color: rgb(255, 199, 198);
+}
+
+.architecture-inception .business-case {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+}
+
+.architecture-inception .functional-overview {
+    grid-column: 1;
+    grid-row: 3 / span 3;
+}
+
+.architecture-inception .quality-goals {
+    grid-column: 1;
+    grid-row: 6 / span 3;
+}
+
+.architecture-inception .business-context {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 6;
+}
+
+.architecture-inception .organisational-constraints {
+    grid-column: 4;
+    grid-row: 3 / span 3;
+}
+
+.architecture-inception .technical-constraints {
+    grid-column: 4;
+    grid-row: 6 / span 3;
+}
+
+.architecture-inception .architecture-hypotheses {
+    grid-column: 1 / span 2;
+    grid-row: 9 / span 2;
+}
+
+.architecture-inception .technical-challenges {
+    grid-column: 3 / span 2;
+    grid-row: 9 / span 2;
+}
+
+.architecture-communication .value-proposition {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+}
+
+.architecture-communication .key-stakeholder {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 3;
+}
+
+.architecture-communication .core-functions {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+}
+
+.architecture-communication .quality-requirements {
+    grid-column: 2;
+    grid-row: 4 / span 2;
+}
+
+.architecture-communication .business-context {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 4;
+}
+
+.architecture-communication .core-decisions {
+    grid-column: 3;
+    grid-row: 1 / span 5;
+}
+
+.architecture-communication .components {
+    grid-column: 3 / span 2;
+    grid-row: 6 / span 4;
+}
+
+.architecture-communication .technologies {
+    grid-column: 4;
+    grid-row: 1 / span 5;
+}
+
+.architecture-communication .risks {
+    grid-column: 1 / span 4;
+    grid-row: 10 / span 2;
+}
+
+@media print {
+    @page {
+        size: portrait;
+    }
+    @page rotated {
+        page-orientation: rotate-left;
+    }
+    div {
+        overflow: hidden;
+    }
+    .sect1.canvas {
+        page: rotated;
+        transform-origin: top left;
+        transform: translateX(100vw) rotate(90deg);
+        width: 100vh;
+        height: 100vw;
+        padding: 0 .9375em !important;
+    }
+}
+</style>
+++++
+endif::[]
